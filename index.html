@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AVINYA</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body id="content" class="content">
+        <div id="top_section" class="top_section">
+            <img src="./image/logo.png" alt="logo">
+            <h1 id="team_name" class="team_name">AVINYA</h1>
+            <h1 id="title" class="title">TELEMETRY DATA</h1>
+        </div>
+        <div id="main_body" class="main_body">
+            <div id="plots" class="plots">
+                <div id="H1" class="H1">
+                    <h1>PLOTS</h1>
+                </div>
+                <div id="P1" class="P1">
+                    <span id="tag" class="tag">Pressure</span>
+                </div>
+                <div id="P2" class="P2">
+                    <span id="tag" class="tag">Temperature</span>
+                </div>
+                <div id="P3" class="P3">
+                    <span id="tag" class="tag">Voltage</span>
+                </div>
+                <div id="P4" class="P4">
+                    <span id="tag" class="tag">Altitude</span>
+                </div>
+                <div id="P5" class="P5">
+                    <span id="tag" class="tag">Tilt_x</span>
+                </div>
+                <div id="P6" class="P6">
+                    <span id="tag" class="tag">Tilt_y</span>
+                </div>
+            </div>
+            <div id="data" class="data">
+                <div id="H2" class="H2">
+                    <h1>DATA</h1>
+                </div>
+                <br><br><br><br>
+                <span>&nbsp PRESSURE :</span><br><br>
+                <span>&nbsp TEMPERATURE :</span><br><br>
+                <span>&nbsp ALTITUDE :</span><br><br>
+                <span>&nbsp TILT_X :</span><br><br>
+                <span>&nbsp TILT_Y :</span><br><br><br>
+                <span>&nbsp LATITUTE (GPS) :</span><br><br>
+                <span>&nbsp LONGITUDE (GPS) :</span><br><br>
+                <span>&nbsp TIME :</span><br><br>
+            </div>
+            <div id="status" class="status">
+                <div id="H3" class="H3">
+                    <h1>STATUS</h1>
+                </div>
+                <br><br><br><br>
+                <span id="FL_MODE" class="FL_MODE">&nbsp FLIGHT MODE &nbsp</span>
+                <span id="SM_MODE" class="SM_MODE">&nbsp SIM MODE &nbsp</span><br><br>
+                <script>
+                    var mode=1;
+                    if (mode==0)
+                    {
+                        document.getElementById('FL_MODE').style.backgroundColor="green"; 
+                        document.getElementById('SM_MODE').style.backgroundColor="none";                      
+                    }
+                    if (mode==1)
+                    {
+                        document.getElementById('FL_MODE').style.backgroundColor="none";
+                        document.getElementById('SM_MODE').style.backgroundColor="green";                       
+                    }
+                </script>
+                <span>&nbsp RUN TIME :</span><br><br>
+                <span>&nbsp WORKING INTEGRITY :</span><br><br>
+                <span>&nbsp PROBE DEPLOYED :</span><br><br>
+                <span>&nbsp LANDING BUZZER ON :</span>
+            </div>
+        </div>
+    </body>
+</html>
